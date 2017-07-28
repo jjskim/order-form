@@ -62,7 +62,8 @@ function displayOrders() {
     var buttonEl = document.createElement('button');
     buttonEl.textContent = 'Delete This Order';
     buttonEl.id = i;
-    buttonEl.type = 'submit';
+    buttonEl.type = 'click';
+    buttonEl.addEventListener('click', deleteThisRow);
     trEl.appendChild(buttonEl);
 
     // the row is now finished -- append the row to the table
@@ -73,7 +74,6 @@ function displayOrders() {
 // eventhandler function to delete the row or object in the main array
 // and then re-render the table
 function deleteThisRow(event) {
-  console.log('hitting here');
   var orderIndex = event.target.id;
   allOrders.splice(orderIndex, 1);
   orderTable.innerHTML = '';
@@ -81,5 +81,3 @@ function deleteThisRow(event) {
 }
 
 displayOrders();
-
-orderTable.addEventListener('click', deleteThisRow);
