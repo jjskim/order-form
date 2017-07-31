@@ -1,16 +1,200 @@
-img {
-  width: 200px;
-  height: 200px;
+body {
+  background-color: #333333;
+  font-family: 'Raleway', sans-serif;
 }
 
-input {
-  display: block;
+body, html {
+  height: 100%;
+  color: white;
 }
 
-h1 {
+li {
+  margin-right: 4px;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 10px;
+  border: solid white;;
+  width: 81%;
+  background-color: #cccccc;
+  color: black;
+}
+
+#welcome {
+  background-image: url(https://raw.githubusercontent.com/codefellows/seattle-201d24/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png);
+  background-color: #006bb3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing:2px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 
-tr {
-  margin-left: auto;
+#welcome > h2 {
+  font-family: Georgia, serif;
+  color: #e6f2ff;
+}
+
+main > ul > li {
+  font-family: Garamond, sans-serif;
+  color: black;
+  font-size: 19px;
+}
+
+aside {
+  width: 13.5%;
+  padding: 15px;
+  padding-top: 5px;
+  float: right;
+  border: solid white;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: #334d00;
+  margin-bottom: 13px;
+}
+
+aside>p {
+  font-style: normal;
+  text-align: center;
+  font-size: 9px;
+}
+
+aside>ul>p {
+  font-size: 12px;
+  text-align: left;
+}
+
+aside>h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside>ul>li {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+aside>ul>p {
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/01/Natural_Water_Stream_found_on_the_way_Up_to_the_Fairy_Meadows.jpg");
+  border: white solid 3px;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  letter-spacing:7px;
+}
+
+footer {
+  border: solid white;
+  padding: 20px;
+  background-image: url(http://i.imgur.com/hn2Ukum.jpg);
+  font-size: 10px;
+}
+
+#family {
+  font-style: italic;
+}
+
+/* CSS for the table elements */
+
+table {
+	border: 10px solid black;
+}
+
+td {
+	padding: 10px;
+	border-radius: 15px;
+  border: 1px solid black;
+}
+
+th {
+	background-color: navy;
+	color: white;
+}
+
+
+/*CSS for the store creation form*/
+
+input {
+  border: 3px solid #73094c;
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  margin: 10px;
+  width: 700px;
+  /*display: block;*/
+}
+
+select {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+label {
+  color: white;
+  /*display: block;*/
+}
+
+fieldset {
+  max-width: 700px;
+  border: 7px solid #73094c;
+  border-radius: 75px;
+  padding: 10px;
+  /*text-align: center;*/
+}
+
+a {
+  color: white;
+}
+
+legend {
+  background-color: black;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button {
+        color: #73094c;
+        text-shadow: 0px 1px 1px #ffffff;
+        border: 2px solid #b2b2b2;
+        background-color: #73094c;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F0E8C7), to(#9C9060));
+        background: -moz-linear-gradient(top, #F0E8C7, #9C9060);
+        background: -o-linear-gradient(top, #F0E8C7, #9C9060);
+        background: -ms-linear-gradient(top, #F0E8C7, #9C9060);
+}
+
+button:hover {
+        color: #73094c;
+        border: 2px solid #a4a4a4;
+        background-color: #73094c;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F0E8C7), to(#9C9000));
+        background: -moz-linear-gradient(top, #F0E8C7, #9C9000);
+        background: -o-linear-gradient(top, #F0E8C7, #9C9000);
+        background: -ms-linear-gradient(top, #F0E8C7, #9C9000);
 }

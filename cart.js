@@ -77,6 +77,7 @@ function deleteThisRow(event) {
   var orderIndex = event.target.id;
   allOrders.splice(orderIndex, 1);
   orderTable.innerHTML = '';
+  localStorage.orders = JSON.stringify(allOrders);
   displayOrders();
 }
 
